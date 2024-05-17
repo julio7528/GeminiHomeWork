@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>API Gemini Pro com PyScript</title>
+      <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+      <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+  </head>
+  <body>
+    <h1>API Gemini Pro - Geração de Conteúdo</h1>
+    <p>Faça sua pergunta:</p>
+    <input type="text" id="pergunta" placeholder="Digite sua pergunta aqui...">
+    <button py-click="gerar_resposta">Gerar Resposta</button>
+    <div id="resposta"></div>
+    <script type="py" src="./main.py" config="./pyScript.json"></script>
+  </body>
+</html>
